@@ -49,6 +49,7 @@ nav {
 }
 .nav-logo { font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: var(--white); }
 .nav-logo span { color: var(--amber); }
+.nav-logo em { font-style: normal; font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.4); letter-spacing: 0.5px; margin-left: 2px; }
 .nav-cta {
   background: var(--purple); color: var(--white);
   padding: 10px 26px; border-radius: 50px;
@@ -393,6 +394,7 @@ footer {
 }
 .footer-brand h3 { font-size: 20px; font-weight: 900; margin-bottom: 8px; }
 .footer-brand h3 span { color: var(--amber); }
+.footer-brand h3 em { font-style: normal; font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.35); letter-spacing: 0.5px; margin-left: 4px; vertical-align: middle; }
 .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; }
 .footer-info { font-size: 12px; color: rgba(255,255,255,0.3); line-height: 2; text-align: right; }
 
@@ -436,7 +438,7 @@ footer {
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">루틴<span>업</span></div>
+  <div class="nav-logo">루틴<span>업</span> <em>RoutineUp</em></div>
   <a href="#signup" class="nav-cta">오픈 알림 신청</a>
 </nav>
 
@@ -681,7 +683,7 @@ footer {
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <h3>루틴<span>업</span></h3>
+      <h3>루틴<span>업</span> <em>RoutineUp</em></h3>
       <p>매일 5분, 사진 한 장으로 쌓이는 영어 루틴<br>엄마표 영어 루틴 플랫폼 · routineup.app</p>
     </div>
     <div class="footer-info">
@@ -702,7 +704,7 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── Apps Script URL (여기에 붙여넣기) ──
-const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbysMOTqUtKBCn8QD5lOBbsbn5475at0b913utP-lWv9PZIgONxd8GjGCx1hqYSzzMjN3g/exec';
 
 // ── 자녀 순서 한국어 ──
 const childLabels = ['첫째', '둘째', '셋째', '넷째'];
