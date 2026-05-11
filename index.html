@@ -878,14 +878,50 @@ footer {
   <!-- 요금 안내 -->
   <section class="legal-section" id="pricing">
     <h2>요금 안내</h2>
-    <p class="legal-meta">유료 이용 조건과 가격을 안내합니다. 실제 결제는 앱·연동 결제 화면의 안내를 따릅니다.</p>
-    <div class="legal-highlight">
-      <strong style="color:var(--amber)">월 정기 구독</strong> · 표시 금액은 <strong>부가가치세가 포함된 납부 금액</strong>입니다. 결제 수단별 수수료·포인트·할부 등은 카드사·PG 정책에 따릅니다.
-    </div>
-    <div class="legal-price-row">
-      <span style="font-size:15px;font-weight:600;color:var(--white)">1개월 구독</span>
-      <span class="legal-price">30,000원</span>
-      <span style="font-size:13px;color:var(--text-sm)">/ 월 (VAT 포함)</span>
+    <p class="legal-meta">표시 금액은 부가가치세가 포함된 납부 금액입니다. 결제 수단별 수수료·포인트·할부 등은 카드사·PG 정책에 따릅니다.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0">
+
+      <!-- 1개월 단기 -->
+      <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:24px 20px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-size:12px;font-weight:600;color:var(--text-sm);text-transform:uppercase;letter-spacing:0.05em">단기 이용</span>
+        <span style="font-size:22px;font-weight:700;color:var(--white)">30,000원</span>
+        <span style="font-size:13px;color:var(--text-sm)">1개월 · VAT 포함</span>
+        <hr style="border:none;border-top:1px solid var(--border);margin:8px 0">
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:rgba(240,240,245,0.75)">
+          <li>✓ 루틴 인증·기록</li>
+          <li>✓ 뱃지 및 월간 보고서</li>
+          <li>✓ 자동 갱신 없음</li>
+        </ul>
+      </div>
+
+      <!-- 정기구독 (추천) -->
+      <div style="background:var(--surface-2);border:2px solid var(--purple);border-radius:14px;padding:24px 20px;display:flex;flex-direction:column;gap:8px;position:relative">
+        <span style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--purple);color:#fff;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;white-space:nowrap">추천</span>
+        <span style="font-size:12px;font-weight:600;color:var(--text-sm);text-transform:uppercase;letter-spacing:0.05em">정기구독</span>
+        <span style="font-size:22px;font-weight:700;color:var(--white)">23,000원</span>
+        <span style="font-size:13px;color:var(--text-sm)">월 · VAT 포함 · 매월 자동 갱신</span>
+        <hr style="border:none;border-top:1px solid var(--border);margin:8px 0">
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:rgba(240,240,245,0.75)">
+          <li>✓ 루틴 인증·기록</li>
+          <li>✓ 뱃지 및 월간 보고서</li>
+          <li>✓ 언제든지 해지 가능</li>
+        </ul>
+      </div>
+
+      <!-- 연간 결제 -->
+      <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:24px 20px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-size:12px;font-weight:600;color:var(--amber);text-transform:uppercase;letter-spacing:0.05em">최대 할인</span>
+        <span style="font-size:22px;font-weight:700;color:var(--white)">250,000원</span>
+        <span style="font-size:13px;color:var(--text-sm)">1년 · VAT 포함 · 월 20,800원 상당</span>
+        <hr style="border:none;border-top:1px solid var(--border);margin:8px 0">
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:rgba(240,240,245,0.75)">
+          <li>✓ 루틴 인증·기록</li>
+          <li>✓ 뱃지 및 월간 보고서</li>
+          <li>✓ 연간 일괄 결제</li>
+        </ul>
+      </div>
+
     </div>
     <div class="legal-block">
       <h3>서비스 개요</h3>
